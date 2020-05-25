@@ -29,35 +29,45 @@ seguintes propriedades (os valores devem ser do tipo mostrado abaixo):
 - `assentos` - Number - cinco por padrão
 - `quantidadePessoas` - Number - zero por padrão
 */
-?
+
+var carro = {
+ marca: "Fiat",
+ modelo: "Uno",
+ placa: "NJJ-0077",
+ ano: 2020,
+ cor: "vermelho",
+ quantasPortas: 4,
+ assentos: 5,
+ quantidadePessoas: 0
+};
 
 /*
 Crie um método chamado `mudarCor` que mude a cor do carro conforme a cor
 passado por parâmetro.
 */
-?
+function mudaCor (color){ return carro.cor=color;}
 
 /*
 Crie um método chamado `obterCor`, que retorne a cor do carro.
 */
-?
+function obterCor(){ return carro.cor;}
 
 /*
 Crie um método chamado `obterModelo` que retorne o modelo do carro.
 */
-?
+function obterModelo(){ return carro.modelo;}
 
 /*
 Crie um método chamado `obterMarca` que retorne a marca do carro.
 */
-?
+function obterMarca(){ return carro.marca;}
 
 /*
 Crie um método chamado `obterMarcaModelo`, que retorne:
 "Esse carro é um [MARCA] [MODELO]"
 Para retornar os valores de marca e modelo, utilize os métodos criados.
 */
-?
+function obterMarcaModelo(){ return "Esse carro é um"+" "+ carro.marca+" "+ carro.modelo}
 
 /*
 Crie um método que irá adicionar pessoas no carro. Esse método terá as
@@ -75,7 +85,21 @@ mostrar quantos assentos ainda podem ser ocupados, com a frase:
 - Se couber somente mais uma pessoa, mostrar a palavra "pessoa" no retorno
 citado acima, no lugar de "pessoas".
 */
-?
+function pessoasNoCarro(pax){ 
+    lotacao= carro.quantidadePessoas+ pax;
+    vagas= assentos-lotacao;
+    var pessoas = vagas
+    pessoas === 1 ?a :as;
+   
+    if (lotacao===5){
+    return "O carro já está lotado!";
+    if (lotacao>5){ 
+   
+    return "Só cabem mais"+vagas+ "pesso"+pessoas+"!";}
+    
+   }
+  
+  "
 
 /*
 Agora vamos verificar algumas informações do carro. Para as respostas abaixo,
